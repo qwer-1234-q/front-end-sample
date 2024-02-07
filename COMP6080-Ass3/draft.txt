@@ -1,0 +1,738 @@
+                // const elem = {                      
+                //     creatorId: document.getElementById('job-author').value,
+                //     createdAt: document.getElementById('job-date').value,
+                //     image: document.getElementById('job-image').value,
+                //     title: document.getElementById('job-title').value,
+                //     start: document.getElementById('job-start-date').value,
+                //     likes: document.getElementById('job-like').value,
+                //     description: document.getElementById('job-description').value,
+                //     comments: document.getElementById('job-comments').value,
+                // }
+
+// const payload = {
+    //     job_author: document.getElementById('job-author').value,
+    //     job_date: document.getElementById('job-date').value,
+    //     job_image: document.getElementById('job-image').value,
+    //     job_title: document.getElementById('job-title').value,
+    //     job_start_date: document.getElementById('job-start-date').value,
+    //     job_likes: document.getElementById('job-like').value,
+    //     job_description: document.getElementById('job-description').value,
+    //     job_comments: document.getElementById('job-comments').value,
+    //     job_num_comments: document.getElementById('job-num-comments').value,
+    // };
+    // for (var i = 0; i < )
+
+
+        // const allJobList = [];
+
+        <!-- <div class="job-item">
+                            <div id="job-title" class="job-title-form"> Draft Job </div><br>
+                            Author: <div id="job-author"> Hello Kitty Author </div><br>
+                            Publish date: <div id="job-date"> 2011-10-05 10:00:00 am </div><br>
+                            start date: <div id="job-start-date"> 2012-02-05 </div><br>
+                            like: <div id="job-like"> 10 </div> <br>
+                            <img id="job-image" src="./assets/job.png" alt="job sample"> <br> <br>
+                            Description: <div id="job-description"> This is a draft job for the sample. </div> <br> <br>
+                            <div id="job-num-comments"> 1 commenet </div> Comments: <br><br>
+                            <div id="job-comments"> It is very hard to get a job aaaaaaaa! </div>
+                        </div> -->
+
+
+
+
+// document.getElementById('close-message-pwd-diff').addEventListener('click', () => {
+//     hide('alert-pwd-diff');
+//     show('page-register');
+// });
+
+// document.getElementById('close-email').addEventListener('click', () => {
+//     hide('alert-email');
+//     show('page-login');
+// });
+
+// document.getElementById('close-pwd-incorrect').addEventListener('click', () => {
+//     hide('alert-pwd-incorrect');
+//     show('page-login');
+// });
+
+// document.getElementById('close-email-reg').addEventListener('click', () => {
+//     hide('alert-email-reg');
+//     show('page-register');
+// });
+
+// MAIN 
+
+// if (localStorage.getItem('token')) {
+//     show('section-logged-in');
+//     hide('section-logged-out');
+//     populateFeed();
+// }
+
+
+        
+        <!-- <div class="alert alert-secondary" role="alert" class="hide">
+        A simple secondary alert—check it out!
+        </div>
+        <div class="alert alert-success" role="alert" class="hide">
+        A simple success alert—check it out!
+        </div>
+        <div class="alert alert-danger" role="alert" class="hide">
+        A simple danger alert—check it out!
+        </div>
+        <div class="alert alert-warning" role="alert" class="hide">
+        A simple warning alert—check it out!
+        </div>
+        <div class="alert alert-info" role="alert" class="hide">
+        A simple info alert—check it out!
+        </div>
+        <div class="alert alert-light" role="alert" class="hide">
+        A simple light alert—check it out!
+        </div>
+        <div class="alert alert-dark" role="alert" class="hide">
+        A simple dark alert—check it out!
+        </div> -->
+
+
+
+                    <!-- <div id="alert-pwd-diff" class="hide" role="alert">
+                <div class="message-box" >
+                    <button id="close-message-pwd-diff"> X </button><br><br>
+                    <h2> The confirm password and password are not the same! </h2>
+                </div>  
+            </div>
+            <div id="alert-pwd-incorrect" class="hide" role="alert">
+                <div class="message-box" >
+                    <button id="close-pwd-incorrect"> X </button><br><br>
+                    <h2> The email or name is incorrect! </h2>
+                </div>  
+            </div> 
+            <div id="alert-email" class="hide" role="alert">
+                <div class="message-box">
+                    <button id="close-email"> X </button><br><br>
+                    <h2> This is not an email! </h2>
+                </div>  
+            </div> -->
+            <!-- <div id="alert-email-reg" class="hide" role="alert">
+                <div class="message-box">
+                    <button id="close-email-reg"> X </button><br><br>
+                    <h2> This is not an email! </h2>
+                </div>  
+            </div>      -->
+
+
+                console.log("Trying to get author name");
+                // const name = new Promise((resolve, reject) => {
+                //     fetch('http://localhost:5005/user?userId=' + job.creatorId, getGETOptions())
+                //         .then((response) => { 
+                //             if (response.status === 400 || response.status === 403) {
+                //                 response.json().then((errorMsg) => {
+                //                     reject(errorMsg.error);
+                //                 });
+                //             } else if (response.status === 200) {
+                //                 response.json().then((data) => {
+                //                     if (data.error) {
+                //                         alert(data.error);
+                //                     } else {
+                //                         console.log('author name: ', data.name);
+                //                         name = data.name;
+                //                     }
+                //                 });
+                //             } 
+                //         })
+                //         .catch((err) => {
+                //             errorMessage(err.message);
+                //         });
+                // });
+                // const name = getAuthorName(job.creatorId);
+                // getAuthorName(job.creatorId).then(name => (console.log("GET THE author name: ", name)));
+                // const name = fetch('http://localhost:5005/user?userId=' + job.creatorId).then((response) => {
+                //     response.json().then((data) => {
+                //         if (data.error) {
+                //             // alert(data.error);
+                //             errorMessage(data.error);
+                //         } else {
+                //             console.log('TRY TO GET name: ', data.name);
+                //             // current_user.innerText = "Successed Login :) Hi, " + data.name;
+                //         }
+                //     })
+                // })
+                // const name = getAuthorName(job.creatorId).then((response) => { 
+                //     response.json().then((data) => {
+                //         if (data.error) {
+                //             alert(data.error);
+                //         } else {
+                //             console.log('TRY TO GET name: ', data.name);
+                //             // current_user.innerText = "Successed Login :) Hi, " + data.name;
+                //         }
+                //     })
+                // });  
+                // const name = getAuthorName(job.creatorId);
+                // console.log("GET THE author name: ");
+
+                
+                // author.innerText = "Author ID: " + job.creatorId + "\nAuthor: " + name + "\n\n";
+                // console.log("temp name: ", getAuthorName());
+                // author.innerText = "Author: " + getAuthorName(job.creatorId).then((data) => {
+                //     data.name;
+                // }) + "\n";
+
+
+function check_date() {
+    var dobPar = dob.value.split('/');
+    var year = parseInt(dobPar[2]);
+    var month = parseInt(dobPar[1]);
+    var day = parseInt(dobPar[0]);
+    var daysInMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+    var isLeap = new Date(year, 1, 29).getDate() == 29;
+    const currDate = new Date();
+    var currYear = currDate.getFullYear();
+    var currMonth = currDate.getMonth() + 1;
+    var currDay = currDate.getDate();
+    if (isLeap) {
+        daysInMonth[1] = 29;
+    }
+    if (month > 12 || month < 1 || year > currYear 
+        || (year == currYear && month > currMonth) 
+        || (year == currYear && month == currMonth && day > currDay)) {
+        return false;
+    }
+    age = currYear - year - 1;
+    if (month < currMonth || (month == currMonth && day <= currDay)) {
+        age += 1;
+    }
+    return day <= daysInMonth[month - 1];
+};
+
+
+
+// const options = {
+    //     method: 'GET',
+    //     headers: {
+    //         'Content-type': 'application/json',
+    //     },
+    // };
+
+    // console.log(localStorage.getItem('token'))
+    // if (localStorage.getItem('token')) {
+    //     options.headers.Authorization = `Bearer ${localStorage.getItem('token')}`;
+    // }
+
+    // return new Promise((resolve, reject) => {
+    //     fetch('http://localhost:5005/user?userId=' + id, options)
+    //         .then((response) => { 
+    //             if (response.status === 400 || response.status === 403) {
+    //                 response.json().then((errorMsg) => {
+    //                     reject(errorMsg.error);
+    //                     errorMessage(data.error);
+    //                 });
+    //             } else if (response.status === 200) {
+    //                 response.json().then((data) => {
+    //                     console.log("Get author info: ", data);
+    //                     resolve(data);                   
+    //                 });
+    //             } 
+    //         })
+    //         .catch((err) => {
+    //             errorMessage(err.message);
+    //         });
+    // });
+
+
+
+// const author_profile = document.createElement('button');
+    // getUserInformation(job.creatorId).then(data => { 
+    //     author_profile.innerText = data.name;
+    // });
+    // author.appendChild(author_profile);
+    // author_profile.addEventListener('click', () => watchUser(job.creatorId));
+
+
+
+// const job_item = document.createElement('div');
+                    // job_item.className = "job-item";
+    
+                    // const job_title = document.createElement('h2');
+                    // job_title.innerText = job.title + "\n\n";
+                    // job_item.appendChild(job_title);
+                    
+                    // const author_id = document.createElement('div');
+                    // author_id.innerText = "Author ID: " + job.creatorId;
+                    // author_id.appendChild(newLine);
+                    // job_item.appendChild(author_id);
+
+                    // const author = document.createElement('div');
+                    // author.innerText = "Author: ";
+                    // const author_profile = document.createElement('button');
+                    // getUserInformation(job.creatorId).then(data => { 
+                    //     author_profile.innerText = data.name;
+                    // });
+                    // author.appendChild(author_profile);
+                    // author_profile.addEventListener('click',  watchUser(job.creatorId));
+                    // job_item.appendChild(author);
+
+                    // const publish = document.createElement('div');
+                    // publish.innerText = "\nCreate time: " + show_pulish_date(job.createdAt) + "\n\n";
+                    // job_item.appendChild(publish);
+    
+                    // const start = document.createElement('div');
+                    // start.innerText = "Start time: " + job.start + "\n\n";
+                    // job_item.appendChild(start);
+    
+                    // const description = document.createElement('div');
+                    // description.innerText = "Description: \n\t" + job.description + "\n\n";
+                    // job_item.appendChild(description);
+    
+                    // const likes = document.createElement('div');
+                    // // var likes_info = job.likes;
+                    // var user_like = 0;
+                    // likes.innerText = 'Likes: { ';
+                    // for (let i = 0; i < job.likes.length; i++) {
+                    //     if (i + 1 < job.likes.length) {
+                    //         likes.innerText += job.likes[i].userName + "; ";
+                    //     } else {
+                    //         likes.innerText += job.likes[i].userName + " }\n";
+                    //     }   
+                    //     if (user_like == 0 && job.likes[i].userId == current_user_id) {
+                    //         user_like = 1;
+                    //     }
+                    // }
+                    // job_item.appendChild(likes);
+                    
+                    // const like_button = document.createElement('button');
+                    // if (user_like) {
+                    //     like_button.innerText = "I like this post!";
+                    // } else {
+                    //     like_button.innerText = "Please like this post!";
+                    // }
+                    // like_button.style = "width: 50%;";
+                    // job_item.appendChild(like_button);
+                    // like_button.addEventListener('click', () => {
+                    //     let turnOn = false;
+                    //     if (user_like == 0) {
+                    //         user_like = 1;
+                    //         turnOn = true;
+                    //         like_button.innerText = "I like this post!";
+                    //         console.log("User email: ", current_user_email);
+                    //         console.log("User job: ", current_user_jobs);
+                    //         console.log("user watch: ", current_user_watchee); 
+                    //         const curr_like = {
+                    //             "userEmail": current_user_email,
+                    //             "userName": current_user_name,
+                    //             "userId": current_user_id
+                    //         }
+                    //         job.likes.push(curr_like);
+                    //     } else {
+                    //         like_button.innerText = "Please like this post!";
+                    //         turnOn = false;
+                    //         user_like = 0;
+                    //         let index = -1;
+                    //         for (let i = 0; i < job.likes.length; i++) {
+                    //             if (job.likes[i].userId == current_user_id) {
+                    //                 if (job.likes[i].userEmail == current_user_email) {
+                    //                     if (job.likes[i].userName == current_user_name) {
+                    //                         index = i;
+                    //                         break;
+                    //                     }
+                    //                 }
+                    //             }
+                    //         }
+                            
+                    //         console.log("current index: ", index);
+                    //         if (index == 0) {
+                    //             job.likes.splice(0, 1);
+                    //         } else if (index == -1) { // nothing
+                    //             console.log("No index for current user");
+                    //         } else {
+                    //             job.likes.splice(index, index);
+                    //         }                        
+                    //     }
+                    //     const payload = {
+                    //         "id": job.id,
+                    //         "turnon": turnOn
+                    //     }
+                    //     apiCall(payload, 'job/like', 'PUT');
+                    //     likes.innerText = 'Likes: { ';                    
+                    //     for (let i = 0; i < job.likes.length; i++) {
+                    //         if (i + 1 < job.likes.length) {
+                    //             likes.innerText += job.likes[i].userName + "; ";
+                    //         } else {
+                    //             likes.innerText += job.likes[i].userName + " }\n";
+                    //         }
+                    //     }
+                    //     job_item.appendChild(newLine);
+    
+                    //     const commentss = document.createElement('div');
+                    //     commentss.innerText = "Comments: \n";
+                    //     for (let i = 0; i < job.comments.length; i++) {
+                    //         const tmpComm = document.createElement('p');
+                    //         tmpComm.innerText = "\nUser: " + job.comments[i].userId + "  " + job.comments[i].userName;
+                    //         tmpComm.innerText += "\nUser Comment: " + job.comments[i].comment + "\n\n";
+                    //         commentss.appendChild(tmpComm);
+                    //     }
+                    //     job_item.appendChild(commentss);
+        
+                    //     const image = document.createElement('img');
+                    //     image.src = job.image;                
+                    //     job_item.appendChild(image);
+
+ // likes.innerText = 'Likes: { ';
+    // for (let i = 0; i < job.likes.length; i++) {
+    //     const like_user = buttonForOtherUser(job.likes[i].userId);
+    //     like_user.innerText = job.likes[i].userName;
+    //     likes.appendChild(like_user);
+    //     if (i + 1 < job.likes.length) {
+    //         likes.innerText += "; ";
+    //         // likes.innerText += job.likes[i].userName + "; ";
+    //     } 
+    //     // else {
+    //     //     likes.appendChild(like_user);
+    //     //     // likes.innerText += job.likes[i].userName;
+    //     // }   
+    //     if (job.likes[i].userId == current_user_id) {
+    //         user_like = 1;
+    //     }
+    // }
+    // likes.innerText += ' }';
+    // likes.appendChild(newLine);
+    // likes.appendChild(newLine);
+
+
+    // const commentss = document.createElement('div');
+    // commentss.innerText = "Comments: \n";
+    // for (let i = 0; i < job.comments.length; i++) {
+    //     const tmpComm = document.createElement('p');
+    //     tmpComm.innerText = "\nUser: " + job.comments[i].userId + "  ";
+    //     const commentUserName = buttonForOtherUser(job.comments[i].userId);
+    //     tmpComm.appendChild(commentUserName);
+    //     const tmpUserComment = document.createElement('p');
+    //     tmpUserComment.innerText += "\nUser Comment: " + job.comments[i].comment + "\n\n";
+    //     tmpComm.appendChild(tmpUserComment);
+    //     commentss.appendChild(tmpComm);
+    // }
+
+
+
+
+    // var user_like = determineUserLikePost(job.likes);
+    // const like_button = document.createElement('button');
+    // like_button.innerText = "I don't like it!";
+    // if (user_like != -1) {
+    //     like_button.innerText = "Like!";
+    // } 
+    // like_button.style = "width: 50%;";
+    // job_item.appendChild(like_button);
+    // like_button.addEventListener('click', () => {
+    //     user_like = determineUserLikePost(job.likes);
+    //     console.log("current user_like: ", user_like);
+    //     let turnOn = false;
+    //     if (user_like == -1) {
+    //         turnOn = true;
+    //         like_button.innerText = "Like!";
+    //         const curr_like = {
+    //             "userEmail": current_user_email,
+    //             "userName": current_user_name,
+    //             "userId": current_user_id
+    //         }
+    //         job.likes.push(curr_like);
+    //         console.log("No user_like for current user");
+    //     } else {
+    //         like_button.innerText = "I don't like it!";
+    //         if (user_like == 0) {
+    //             job.likes.splice(0, 1);
+    //         } else if (user_like == -1) { // nothing
+                
+    //         } else {
+    //             job.likes.splice(user_like, user_like);
+    //         }                        
+    //     }
+    //     const payload = {
+    //         "id": job.id,
+    //         "turnon": turnOn
+    //     }
+    //     apiCall(payload, 'job/like?userId='+ current_user_id, 'PUT');
+    //     job_item.removeChild(likes);
+    //     likes = jobLikes(job.likes);
+    //     job_item.appendChild(likes);
+    //     job_item.appendChild(newLine);
+    // });
+
+
+            // other_watchee.innerText = "Watchee Users: ";
+            // if (data.watcheeUserIds.length == 0) {
+            //     other_watchee.innerText += "no follow anyone\n\n";
+            // } else {
+            //     for (let i = 0; i < data.watcheeUserIds.length; i++) {
+            //         const watchee = buttonForOtherUser(data.watcheeUserIds[i]);
+            //         watchee.appendChild(other_watchee);
+            //     }
+            // }    
+
+// function addWatchUser(watchId) {
+//     var added = checkWatchUserExist(watchId);
+//     if (added) {
+//         errorMessage("You added the user " + watchId + ".");
+//     } else {
+//         getUserInformation(watchId).then(data => {
+//             const payload = {
+//                 email: data.email,
+//                 turnon: true
+//             }
+//             apiCall(payload, 'user/watch?userId='+current_user_id, 'PUT');
+//         })
+//         watchingUpdatePage();
+//     }
+// }
+
+// function deleteWatchUser(watchId) {
+//     var added = checkWatchUserExist(watchId);
+//     if (added == 0) {
+//         errorMessage("You don't have the user " + watchId + ".");
+//     } else {
+//         getUserInformation(watchId).then(data => {
+//             const payload = {
+//                 email: data.email,
+//                 turnon: false
+//             }
+//             console.log("watch log payload: ", payload);
+//             apiCall(payload, 'user/watch?userId='+current_user_id, 'PUT');
+//         })
+//         watchingUpdatePage();
+//     }
+// }
+
+
+function showRegister() {
+    // deleteSection('page-login');
+    // deleteSection('section-job-show');
+    hide('page-login');
+    hide('section-job-show');
+    // addSection('page-register');
+    show('page-register');
+    show('nav-logged');
+    show('section-logged-out');
+    // addSection('section-logged-out');
+}
+
+function hideRegister() {
+    // deleteSection('page-register');
+    hide('page-register');
+}
+
+function showLogin() {
+    show('nav-logged');
+    show('page-login');
+    // addSection('page-login');    
+    show('section-logged-out');
+    // addSection('section-logged-out');
+}
+
+export function hideLogin() {
+    hide('page-login');
+    hide('nav-logged');
+    hide('section-logged-out');
+    // deleteSection('page-login');
+    // deleteSection("section-logged-out");
+}
+
+function restartLogin() {
+    hide('section-logged-in');
+    // deleteSection('section-logged-in');  
+    hide('section-job-show');
+    // deleteSection('section-job-show');
+    hide('show-all-my-job');
+    // deleteSection('show-all-my-job');
+    hideWatchUserInfor();
+    hideWatchingUser();
+    hideUpdateUser();
+    hideRegister();
+    showLogin();
+    current_user_name = ''
+    current_user.innerText = '';
+    current_user_id = -1;
+    showCurrentUser = 0;
+}
+
+function successfullyLogin() {
+    showAllJobList();
+    refreshJobPage();
+    showCurrentUser = 0;
+}
+
+function showUpdateUser() {
+    show('update-user');
+    // addSection('update-user');
+}
+
+export function hideUpdateUser() {
+    hide('update-user');
+    // deleteSection('update-user');
+}
+
+function showWatchUser() {
+    hideAllJobList();
+    hideWatchingUser();
+    showWatchUserInfor();
+}
+
+export function hideUser() {    
+    hideWatchUserInfor();
+    cleanWatchUserInfo();
+    showCurrentUser = 0;
+    showAllJobList();
+}
+
+function showWatchUserInfor() {
+    show("watch-user-information");
+    // addSection('watch-user-information');
+}
+
+export function hideWatchUserInfor() {
+    // deleteSection('watch-user-information');
+    hide('watch-user-information');
+}
+
+function showWatchingUser() {
+    show('watching-user-page');
+    // addSection('watching-user-page');
+}
+
+export function hideWatchingUser() {
+    hide('watching-user-page');
+    // deleteSection('watching-user-page');
+    cleanwatchingUpdatePage();
+}
+
+
+    if (emailCorrect == 1 || emailCorrect == -1) {
+        let added = 0; 
+        
+
+        getUserInformation(current_user_id).then(data => {
+            for (let i = 0; i < data.watcheeUserIds.length; i++) {
+                if (emailCorrect == -1 && data.watcheeUserIds[i].userId == watchId) {
+                    added = 1;
+                    break;
+                }
+                if (emailCorrect == 1 && data.watcheeUserIds[i].userEmail == watchEmail) {
+                    added = 1;
+                    watchId = data.watcheeUserIds[i].userId;
+                    break;
+                }
+            }
+            console.log('added is ', added);
+            // if (added == 0 && !turn && profile == 0) { // turn is false mean delete watch user
+            //     errorMessage("You don't have the user " + watchId + ", " + watchEmail + ".");
+            // } else 
+            if (added == 1 && turn && profile == 0) { // turn is true mean add watch user
+                errorMessage("You added the user " + watchId + ", " + watchEmail + ".");
+            } else {
+                if (added == 1 && profile == 1) { // the default of turn in profile is true
+                    turn = false;
+                }
+                
+                
+                console.log("current id in the add delete, ", current_user_id);
+                console.log("watch log payload: ", payload);
+                if (added == 0 && profile == 0) {
+                    apiCall(payload, 'user/watch?userId='+current_user_id, 'PUT');
+                } else {
+                    getUserInformation(watchId).then(data => {
+                        payload['email'] = data.email;
+                        console.log("update email: ", payload['email']);
+                        apiCall(payload, 'user/watch?userId='+current_user_id, 'PUT');            
+                    });  
+                }
+                if (profile == 0) {
+                    watchingUpdatePage();
+                }           
+            }
+        });
+    }
+
+    // export function addSection(section) {
+//     const ind = current_section.indexOf(section);
+//     if (ind == -1) {
+//         current_section.push(section);
+//     }
+//     console.log(current_section.length + " sections ");
+//     console.log("Add section: ", current_section);
+// }
+
+// export function deleteSection(section) {
+//     const ind = current_section.indexOf(section);
+//     if (ind == -1) {
+
+//     } else if (ind == 0) {
+//         current_section.splice(0, 1);
+//     } else {
+//         current_section.splice(ind, 1);
+//     }
+//     console.log("delete: ", current_section);
+// }
+
+    // for (var i = 0; i < current_section.length; i++) {
+    //     show(current_section[i]);
+    // }
+
+    //     for (var i = 0; i < current_section.length; i++) {
+//         console.log('hide current sections is ', current_section[i]);
+//         hide(current_section[i]);
+//     }    
+
+
+// document.getElementById('first-page').addEventListener('click', () => {
+//     start_page = 0;
+//     populateFeed();
+// });
+
+// document.getElementById('previous-page').addEventListener('click', () => {  
+//     const next_page = document.getElementById('next-page');
+//     const previous_page = document.getElementById('previous-page');
+//     if (start_page - 5 >= 0) {
+//         start_page -= 5;
+//         populateFeed();
+//     } else {
+//         errorMessage("No previous page!");
+//         start_page = 0;
+//     }
+    
+//     if (start_page == 0) {
+//         previous_page.innerText = 'No previous page';
+//     } else {
+//         previous_page.innerText = 'Previous page';
+//     }
+//     if (last_page == 0) {
+//         next_page.innerText = 'Last page';
+//     }
+// });
+
+// document.getElementById('next-page').addEventListener('click', () => {
+//     const next_page = document.getElementById('next-page');
+//     const previous_page = document.getElementById('previous-page');
+//     if (last_page != -1 && start_page + 5 < last_page) {
+//         start_page += 5;
+//     } else if (last_page == -1) {
+//         start_page += 5;
+//         populateFeed();
+//     } else {
+//         errorMessage("This is last page! Can you click previous page or the first page?");
+//     }
+
+//     if (last_page != 0) {
+//         previous_page.innerText = "Previous page";
+//     } 
+
+//     console.log("start page", start_page);
+//     if (last_page == start_page) {        
+//         next_page.innerText = "Last page";
+//     } else {
+//         next_page.innerText = "Next page";
+//     }
+// });
+
+
+                <div class="job-page-button-display">
+                    <button id="first-page"> First Page </button>
+                    <button id="previous-page"> No previous page </button>
+                    <button id="next-page"> Next page </button>
+                </div>

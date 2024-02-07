@@ -1,0 +1,76 @@
+                                <!-- <form action="feature"> 
+                                        <input type="checkbox" name="feature" class="feature-item">
+                                        <span class="feature-text">
+                                            Heating
+                                        </span>
+                                        <br>
+                                        <input type="checkbox" name="feature" class="feature-item"> 
+                                        <span class="feature-text">
+                                            AirConditioning
+                                        </span>
+                                        <br> 
+                                        <input type="checkbox" name="feature" class="feature-item"> 
+                                        <span class="feature-text">
+                                            Pool
+                                        </span>
+                                        <br>
+                                        <input type="checkbox" name="feature" class="feature-item"> 
+                                        <span class="feature-text">
+                                            Sandpit
+                                        </span>
+                                        <br>
+                                </form>    -->
+
+/* body::before {
+    content: '';
+    background-image: url('page.PNG');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.26;
+    height: 762px;
+    width: 490px;
+} */
+
+
+
+// function count_features() {
+//     let tmp = 0;
+//     for(let i = 0; i < feature.length; i++) {
+//         if (feature[i].checked == true) {
+//             tmp += 1;
+//         }
+//     }
+//     n_feature = tmp;
+
+//     if (n_feature == 4) {
+//         all_no_select = true;
+//         infoButton.innerText = "Deselect All";
+//     } else if (n_feature == 0) {
+//         all_no_select = false;
+//         infoButton.innerText = "Select All";
+//     }
+//     rander();
+// }
+
+for (var i = 0; i < feature.length; i++) {
+    var tmp = 0;
+    feature[i].addEventListener('change', () => {
+        if (feature[i].checked == true) {
+            tmp += 1;
+        }
+    });
+    n_feature = tmp;
+
+    if (n_feature == 4) {
+        all_no_select = true;
+        infoButton.innerText = "Deselect All";
+    } else if (n_feature == 0) {
+        all_no_select = false;
+        infoButton.innerText = "Select All";
+    }
+    rander();
+};
